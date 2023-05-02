@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="C:\Users\Falcon\Desktop\assignments\WT\INNOVATIVE\WT_HOME.css">
+    
+</head>
+<body >
+<br>
+<div>
+  <img src="logo.png"style="padding-left:20px;height:60px; float:left">
+  <a style="padding: 14px 25px;font-size: large;" href="C:\Users\Falcon\Desktop\assignments\WT\INNOVATIVE\WT_CONTACT_US.html">CONTACT US</a>
+  <a style="padding: 14px 25px;font-size: large;" href="C:\Users\Falcon\Desktop\assignments\WT\INNOVATIVE\WT_ABOUT_US.html">ABOUT US</a>
+  <a style="padding: 14px 25px;font-size: large;" href="C:\Users\Falcon\Desktop\assignments\WT\INNOVATIVE\WT_CATALOGUE_LIST.html">CATALOGUE LIST</a> 
+</div>
+<p style="clear:both"></p>
+
+<div class="slideshow-container">
+<div class="mySlides fade" >
+  <div class="numbertext"></div>
+  <img src="caraousal5.png" style="width:100%;height: 450px;padding: 20px;">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade" >
+  <div class="numbertext"></div>
+  <img src="caraousal4.png" style="width:100%;height: 450px;padding: 20px;">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade" >
+  <div class="numbertext"></div>
+  <img src="caraousal2.png" style="width:100%;height: 450px;padding: 20px;">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade" >
+  <div class="numbertext"></div>
+  <img src="caraousal1.png" style="width:100%;height: 450px;padding: 20px;">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade" >
+  <div class="numbertext"></div>
+  <img src="caraousal3.png" style="width:100%;height: 450px;padding: 20px;">
+  <div class="text"></div>
+</div>
+
+<a style="text-decoration: none;"class="prev" onclick="plusSlides(-1)"><</a>
+<a style="text-decoration: none;"class="next" onclick="plusSlides(1)">></a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<hr><hr><div class="grid_container">
+<div class="mainpage" style="padding-left: 70px;">
+    <img src="collage.png"usemap="#collage">
+    <map name="collage">
+      <area shape="rect" coords="9,9,608,608" alt="Computer" href="C:\Users\Falcon\Desktop\assignments\WT\INNOVATIVE\WT_CATALOGUE_LIST.html">
+    </map>
+</div>
+<div class="mainpage_text" style="padding-right: 30px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: larger;">
+    <p>We, here at Patidar Mills believe in the mantra of 'Be Trendy, Traditionally'.<br><br>
+        We manufacture a wide range of good quality unstitched printed cotton dress materials to provide you the perfect look you desire.<br><br>
+        From the generations-old craft to the exquisite modern styles, We have it all !!</p>
+</div>
+</div>
+  <hr>
+  <hr>
+<div class="grid_container">
+  <div class="mainpage">
+        <img src="logo.png"  style="position:absolute;padding-top: 40px;padding-left: 40px;padding-right:40px;padding-bottom: 20px;">
+    </div>
+    <div class="mainpage_text" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: larger;">
+        <p style="text-align: center;"><u style="font-size:x-large;">USEFUL LINKS:</u>
+        <br>
+        <ul style="padding-left: 250px;cursor: pointer;"><i>
+            
+            <li><a style="float:none;" href="C:\Users\Falcon\Desktop\assignments\WT\INNOVATIVE\WT_CATALOGUE_LIST.html">
+                Catalogue List</a>
+            </li>
+            <li><a style="float:none;" href="C:\Users\Falcon\Desktop\assignments\WT\INNOVATIVE\WT_ABOUT_US.html">
+              About Us</a>
+            </li>
+            <li><a style="float:none;" href="C:\Users\Falcon\Desktop\assignments\WT\INNOVATIVE\WT_CONTACT_US.html">
+                Contact Us</a>
+            </li>
+            </i>
+        </ul>
+        </p>
+        
+    </div>
+    </div>
+    <hr><hr>
+</body>
+</html> 

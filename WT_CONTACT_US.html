@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <style>
+            .grid_container{
+                display: grid; 
+                grid-template-columns: 1fr 1fr; 
+                grid-gap: 20px; 
+            }
+            .catalogue img {
+                margin-left: 150px;
+                display:inline-block;
+                width: 300px;
+                border-radius: 5%;
+                box-shadow:10px 10px 50px 5px grey;
+            }
+
+            .catalogue_text{
+                display:inline-block;
+                padding-top: 80px;
+                padding-bottom: 150px;
+            }
+            a:link, a:visited {
+
+                color: rgb(2, 97, 134);
+                display: inline-block;
+                text-align: center;
+                float: right;
+                text-decoration: none;
+            }
+            
+            a:hover, a:active {
+                cursor:pointer;
+                text-decoration:underline overline;
+            }
+            .register .nav-tabs .nav-link:hover{
+                border: none;
+            }
+            .text-align{
+                margin-top: -3%;
+                margin-bottom: -9%;
+
+                padding: 10%;
+                margin-left: 30%;
+            }
+            .form-new{
+                margin-right: 22%;
+                margin-left: 20%;
+            }
+            .register-heading{
+                margin-left: 21%;
+                margin-bottom: 10%;
+                color: #e9ecef;
+            }
+            .register-heading h1{
+                margin-left: 21%;
+                margin-bottom: 10%;
+                color: #e9ecef;
+            }
+            .register{
+                background: -webkit-linear-gradient(left, skyblue, red);
+                margin-top: 3%;
+                padding: 3%;
+                border-radius: 2.5rem;
+            }
+            .btnSubmit
+            {
+                width: 50%;
+                border-radius: 1rem;
+                padding: 1.5%;
+                color: #fff;
+                background-color: rgb(2, 97, 134);
+                border: none;
+                cursor: pointer;
+                margin-right: 6%;
+                color: black;
+                margin-top: 4%;
+            }
+    </style>
+
+</head>
+<body>
+    <div >
+        <br>
+        <img src="logo.png"style="padding-left:20px;height:60px; float:left">
+        <a style="padding: 14px 25px;font-size: large;"href="C:\Users\Falcon\Desktop\assignments\WT\INNOVATIVE\WT_ABOUT_US.html">ABOUT US</a>
+        <a style="padding: 14px 25px;font-size: large;" href="C:\Users\Falcon\Desktop\assignments\WT\INNOVATIVE\WT_CATALOGUE_LIST.html">CATALOGUE LIST</a>
+        <a style="padding: 14px 25px;font-size: large;"href="C:\Users\Falcon\Desktop\assignments\WT\INNOVATIVE\WT_HOME.html">HOME</a>
+      </div>
+      <p style="clear:both"></p>
+
+    <div style="background-image: url(bgimg.jfif);background-size:cover;">
+        <p style="font-family:initial; text-align: center; font-size:50px; padding-top: 20px;padding-bottom: 20px ;"><b>CONTACT US</b></p>
+    </div>
+    <hr><hr>
+    <br><br>
+
+    <div class="grid_container">
+          <div class="mainpage_text" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: larger;margin-top: 50px;">
+              <p style="text-align: center;"><u>ADDRESS</u> <br>Patidar mills behind madhuvan process Nr. saint francis school
+                <br>Navagadh- Dhoraji highway Navagadh Jetpur- 360375
+              </p>
+              
+          </div>
+          <div class="mainpage_text" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: larger;margin-top: 50px;">
+            <p style="text-align: center;"><u>EMAIL</u> <br>patidarmills@gmail.com
+            </p>
+            
+        </div>
+          </div>
+          <div class="mainpage_text" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:xx-large;margin-top: 50px;">
+            <p style="text-align: center;"><u>GET IN TOUCH</u>
+            </p>
+            
+        </div>
+<div class="container register">
+            <div class="row">
+                <div class="col-md-12">
+                        <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="row register-form">
+                                <div class="col-md-12">
+                                    <form method="post" autocomplete="off" name="google-sheet" >
+                                        <div class="form-group">
+                                            <input type="text" name="Firstname" class="form-control" placeholder="First Name" value="" required=""/>
+                                        </div>
+										<div class="form-group">
+                                            <input type="text" name="Lastname" class="form-control" placeholder="Last Name" value="" required=""/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" name="Email" class="form-control" placeholder="Email Id" value="" required=""/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="Phone" class="form-control" placeholder="Contact Number" value="" required=""/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="message" class="form-control" placeholder="Type your message" value="" required=""/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" name="submit" class="btnSubmit btn-block" value="Submit">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+		<hr><hr>
+
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbznGfTug5zYLC_dj6fhmaY5AwFJA0sCpOcpJmDGbq-U0j0Romw43lt0gbsLI8eSqdEgmw/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <div class="grid_container">
+            <div class="mainpage">
+                  <img src="logo.png"  style="position:absolute;padding-top: 40px;padding-left: 100px;padding-right:40px;padding-bottom: 20px;width:600px">
+              </div>
+              <div class="mainpage_text" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: larger;margin-top: 50px;">
+                  <p style="text-align: center;"><u style="font-size:x-large;">USEFUL LINKS:</u>
+                  <br>
+                  <ul style="padding-left: 250px;cursor: pointer;"><i>
+                    <li><a style="float:none;" href="C:\Users\Falcon\Desktop\assignments\WT\INNOVATIVE\WT_HOME.html">
+                        Home</a>
+                    </li>
+                      <li><a style="float:none;" href="C:\Users\Falcon\Desktop\assignments\WT\INNOVATIVE\WT_CATALOGUE_LIST.html">
+                          Catalogue List</a>
+                      </li>
+                      <li><a style="float:none;" href="C:\Users\Falcon\Desktop\assignments\WT\INNOVATIVE\WT_ABOUT_US.html">
+                        About Us</a>
+                      </li>
+                      </i>
+                  </ul>
+                  </p>
+                  
+              </div>
+              </div>
+</body>
+</html>
